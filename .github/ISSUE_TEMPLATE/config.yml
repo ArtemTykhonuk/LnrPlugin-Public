@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Documentation
+    url: https://plugins.jetbrains.com/plugin/XXXXX-lnr
+    about: Check the plugin page on JetBrains Marketplace for documentation and FAQs
+  - name: 🔒 Security Vulnerability
+    url: https://github.com/ArtemTykhonuk/LnrPlugin-Public/security/advisories/new
+    about: Report security vulnerabilities privately via GitHub Security Advisories

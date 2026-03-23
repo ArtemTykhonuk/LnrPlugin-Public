@@ -1,0 +1,39 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+build/
+*~
+
+# Gradle
+.gradle/
+gradlew
+gradlew.bat
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+local.properties
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Sensitive/Local Configuration
+.env
+.env.*
+!.env.example
+
+# Credentials/Certs
+*.jks
+*.p12
+*.pem
+*.key
+*.gpg
+*.asc
+
+# Testing
+*.hprof
