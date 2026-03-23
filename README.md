@@ -66,16 +66,17 @@ IntelliJ IDEA · WebStorm · PyCharm · Rider · GoLand · PhpStorm · CLion · 
 
 ## 📸 Screenshots
 
-<!-- TODO: Add screenshots -->
-<!-- 
 | Issue List | Kanban Board | Create Issue |
 |:---:|:---:|:---:|
-| ![Issue List](assets/screenshots/issue-list.png) | ![Kanban Board](assets/screenshots/kanban-board.png) | ![Create Issue](assets/screenshots/create-issue.png) |
+| ![Issue List](assets/screenshots/screenshot-issue-list.png) | ![Kanban Board](assets/screenshots/screenshot-kanban-board.png) | ![Create Issue](assets/screenshots/screenshot-create-issue.png) |
 
 | Issue Detail | Settings | AI Generate |
 |:---:|:---:|:---:|
-| ![Issue Detail](assets/screenshots/issue-detail.png) | ![Settings](assets/screenshots/settings.png) | ![AI Generate](assets/screenshots/ai-generate.png) |
--->
+| ![Issue Detail](assets/screenshots/screenshot-issue-detail.png) | ![Settings](assets/screenshots/screenshot-settings.png) | ![AI Generate](assets/screenshots/screenshot-ai-generate.png) |
+
+| Kanban List | Cycles |
+|:---:|:---:|
+| ![Kanban List](assets/screenshots/screenshot-kanban-list.png) | ![Cycles](assets/screenshots/screenshot-cycles.png) |
 
 ---
 
