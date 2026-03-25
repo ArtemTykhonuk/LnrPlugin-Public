@@ -10,9 +10,9 @@
 </p>
 
 <p align="center">
-  <a href="https://plugins.jetbrains.com/plugin/XXXXX-lnr"><img src="https://img.shields.io/jetbrains/plugin/v/XXXXX-lnr.svg?label=Marketplace&color=6C63FF" alt="JetBrains Marketplace"></a>
-  <a href="https://plugins.jetbrains.com/plugin/XXXXX-lnr"><img src="https://img.shields.io/jetbrains/plugin/d/XXXXX-lnr.svg?color=6C63FF" alt="Downloads"></a>
-  <a href="https://plugins.jetbrains.com/plugin/XXXXX-lnr/reviews"><img src="https://img.shields.io/jetbrains/plugin/r/rating/XXXXX-lnr?color=6C63FF" alt="Rating"></a>
+  <a href="https://plugins.jetbrains.com/plugin/30909-lnr"><img src="https://img.shields.io/jetbrains/plugin/v/30909-lnr.svg?label=Marketplace&color=6C63FF" alt="JetBrains Marketplace"></a>
+  <a href="https://plugins.jetbrains.com/plugin/30909-lnr"><img src="https://img.shields.io/jetbrains/plugin/d/30909-lnr.svg?color=6C63FF" alt="Downloads"></a>
+  <a href="https://plugins.jetbrains.com/plugin/30909-lnr/reviews"><img src="https://img.shields.io/jetbrains/plugin/r/rating/30909-lnr?color=6C63FF" alt="Rating"></a>
 </p>
 
 ---
@@ -80,38 +80,42 @@ IntelliJ IDEA · WebStorm · PyCharm · Rider · GoLand · PhpStorm · CLion · 
 
 ---
 
-## 🚀 Installation
+## 🚀 Getting Started
 
-### From JetBrains Marketplace (Recommended)
+### 1. Installation
+
+#### From JetBrains Marketplace (Recommended)
 
 1. Open your JetBrains IDE
 2. Go to **Settings** → **Plugins** → **Marketplace**
 3. Search for **"Lnr"**
 4. Click **Install** and restart your IDE
 
-Or install directly from the [JetBrains Marketplace page](https://plugins.jetbrains.com/plugin/XXXXX-lnr).
+Or install directly from the [JetBrains Marketplace page](https://plugins.jetbrains.com/plugin/30909-lnr).
 
-### Manual Installation
+#### Manual Installation
 
-1. Download the latest `.zip` from the [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/XXXXX-lnr)
+1. Download the latest `.zip` from the [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/30909-lnr)
 2. Go to **Settings** → **Plugins** → ⚙️ → **Install Plugin from Disk...**
 3. Select the downloaded `.zip` file and restart your IDE
 
 ---
 
-## ⚙️ Setup
+### 2. Configuration
 
-1. Get a **Linear API key** from [Linear Settings → API](https://linear.app/settings/api)
-2. In your IDE, go to **Settings** → **Tools** → **Lnr**
-3. Paste your API key and click **Test Connection**
-4. Open the **Lnr** tool window from the right sidebar
+1. **Get your Linear API Key**: Go to [Linear Settings → API](https://linear.app/settings/api) and create a personal API key.
+2. **Configure the IDE**: Open **Settings** → **Tools** → **Lnr**.
+3. **Connect**: Paste your API key and click **Test Connection** to verify.
+4. **Open Lnr**: Find the **Lnr** icon on the tool window bar (usually on the right) or go to **View → Tool Windows → Lnr**.
 
-### AI Configuration (Optional)
+---
 
-To enable AI-powered description generation:
+### 3. AI Setup (Optional)
 
-- **JetBrains AI Assistant** — just select it in the dropdown (requires AI Assistant plugin)
-- **OpenAI-compatible** — enter your API key, endpoint, and select a model
+To enable AI-powered description generation, choose your preferred provider in the Lnr settings:
+
+- **JetBrains AI Assistant** — Zero configuration, uses your existing AI setup (requires AI Assistant plugin).
+- **OpenAI-compatible (BYOK)** — Enter your own API key, endpoint, and select a model (GPT-4o, Claude, local models via Ollama, etc.).
 
 ---
 
@@ -159,6 +163,7 @@ See [CHANGELOG.md](CHANGELOG.md) for a full list of changes in each version.
 - All communication with Linear uses HTTPS
 - No data is collected, stored, or sent to third parties
 - AI features are opt-in and use only the provider you configure
+- See our [Privacy Policy](PRIVACY.md) for full details on how we handle your data
 - See our [Security Policy](SECURITY.md) for reporting vulnerabilities
 
 ---

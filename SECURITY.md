@@ -15,7 +15,7 @@ If you discover a security vulnerability in Lnr, please report it responsibly.
 
 ### How to Report
 
-1. **Email**: Send details to the project maintainer via GitHub (use the private vulnerability reporting feature if available)
+1. **Email**: artem.tykhonuk@hotmail.com
 2. **GitHub Security Advisory**: Use the [Security Advisories](https://github.com/ArtemTykhonuk/LnrPlugin-Public/security/advisories/new) feature to privately report the vulnerability
 
 ### What to Include
@@ -53,3 +53,7 @@ The following are in scope:
 - Use a dedicated API key for the plugin (not your personal one)
 - Keep your IDE and Lnr plugin updated to the latest version
 - If using OpenAI-compatible AI, ensure your endpoint uses HTTPS
+
+---
+
+For more information on how we handle your data, see our [Privacy Policy](PRIVACY.md).
