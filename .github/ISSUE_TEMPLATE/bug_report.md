@@ -42,7 +42,7 @@ If applicable, add screenshots to help explain your problem.
 
 ```
 Paste relevant logs from Help → Show Log in Finder/Explorer
-Look for lines containing "lnr" or "heathcliff"
+Look for lines containing "lnr" or "artembear"
 ```
 
 </details>
