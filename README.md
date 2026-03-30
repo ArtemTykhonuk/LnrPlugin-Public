@@ -134,7 +134,7 @@ To enable AI-powered description generation, choose your preferred provider in t
 
 ## 📋 Requirements
 
-- JetBrains IDE version **2024.2** or later
+- JetBrains IDE version **2024.1** or later
 - [Linear](https://linear.app) account with API key
 - Git (for branch creation features)
 - JetBrains AI Assistant plugin (optional, for AI generation)
@@ -157,14 +157,13 @@ See [CHANGELOG.md](CHANGELOG.md) for a full list of changes in each version.
 
 ---
 
-## 🔒 Privacy & Security
+## 🔒 Technical Details & Privacy
 
-- Your Linear API key is stored securely via JetBrains [PasswordSafe](https://plugins.jetbrains.com/docs/intellij/persisting-sensitive-data.html)
-- All communication with Linear uses HTTPS
-- No data is collected, stored, or sent to third parties
-- AI features are opt-in and use only the provider you configure
-- See our [Privacy Policy](PRIVACY.md) for full details on how we handle your data
-- See our [Security Policy](SECURITY.md) for reporting vulnerabilities
+- **Security** — Your Linear API key and AI API keys are stored securely using the IntelliJ Platform's [PasswordSafe](https://plugins.jetbrains.com/docs/intellij/persisting-sensitive-data.html).
+- **Privacy** — All API calls are direct to Linear and your AI provider. No middle-man servers are used. Data handling for AI features follows your chosen provider's (JetBrains or OpenAI) policy.
+- **Performance** — Built with Kotlin Coroutines and a low-overhead `java.net.http.HttpClient` implementation to ensure a smooth, non-blocking IDE experience.
+- **Modern Tech Stack** — Built on the latest Kotlin 2.1 with `kotlinx.serialization` for high-performance GraphQL parsing.
+- **Compliance** — See our [Privacy Policy](PRIVACY.md) for full details on how we handle your data and our [Security Policy](SECURITY.md) for reporting vulnerabilities.
 
 ---
 

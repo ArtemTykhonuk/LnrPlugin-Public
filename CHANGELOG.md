@@ -4,6 +4,15 @@ All notable changes to the Lnr plugin will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com), and this project adheres to [Semantic Versioning](https://semver.org).
 
+## [1.0.1] - 2026-03-30
+
+### Fixed
+- Improved compatibility with JetBrains IDEs version 2024.1 and newer
+- Resolved an issue where opening plugin settings could cause a brief UI freeze
+
+### Improved
+- Enhanced plugin listing and discoverability on JetBrains Marketplace
+
 ## [1.0.0] - 2026-03-25
 
 ### Added
