@@ -4,6 +4,13 @@ All notable changes to the Lnr plugin will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com), and this project adheres to [Semantic Versioning](https://semver.org).
 
+## [1.0.2] - 2026-04-01
+
+### Fixed
+- Fixed user name not being remembered after IDE restart, causing branch names to use "user/" instead of the actual username
+- Fixed duplicate "Loading" indicators appearing at the bottom of Issues and Kanban tabs during refresh
+- Fixed empty space appearing in the issue detail view after editing labels
+
 ## [1.0.1] - 2026-03-30
 
 ### Fixed
