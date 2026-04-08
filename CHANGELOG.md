@@ -4,6 +4,18 @@ All notable changes to the Lnr plugin will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com), and this project adheres to [Semantic Versioning](https://semver.org).
 
+## [1.1.0] - 2026-04-07
+
+### Added
+- **Sub-issues support:** Full hierarchical display in list and Kanban views, parent navigation, and creation with autocomplete.
+- **Due Dates:** View and edit due dates on issues with color-coded overdue indicators.
+- **Threaded Comment Replies:** View nested comment threads and reply directly within the IDE.
+- **Issue Relations:** View "Blocks", "Blocked by", and "Related" issue dependencies in the detail panel.
+- **Issue Estimates:** Support for team-specific estimation scales (Fibonacci, Exponential, T-Shirt, etc.) in view and edit modes.
+
+### Improved
+- **Auto-connect on Startup:** Plugin now automatically restores credentials and connects on IDE startup.
+
 ## [1.0.2] - 2026-04-01
 
 ### Fixed
