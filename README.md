@@ -17,7 +17,34 @@
 
 ---
 
+## 🎉 What's new in 1.2.0
+
+- **Inbox** — A dedicated Inbox tab mirrors Linear's notifications, with an unread badge on the status bar, archive/unarchive, and background polling every 60 seconds.
+- **Emoji Reactions** — React to comments with a full Unicode picker featuring live search and a "Recently used" strip. Reaction pills are grouped per emoji with reactor tooltips.
+- **Attachments** — View, open, and delete attachments on issues, or upload new files via picker or drag-and-drop (25 MB per file).
+- **Comment Thread Resolution** — Mark a specific reply as the thread's resolution; the resolving reply gets a green **Resolution** badge and can be reopened from a `⋮` menu.
+
+See [CHANGELOG.md](CHANGELOG.md#120---2026-05-19) for the full list.
+
+---
+
 ## ✨ Features
+
+### Inbox & Notifications
+- Dedicated **Inbox** tab mirroring Linear's notifications, with relative timestamps and per-type icons
+- Unread badge on the IDE status bar (`Lnr [N]`, capped at `[99+]`); clicking focuses the Inbox
+- "Mark all as read", "Archive all", and per-row context menu actions
+- Background polling every 60 seconds with optimistic UI updates
+
+### Comments, Reactions & Thread Resolution
+- Emoji reactions on comments with a full Unicode picker (search + recently used)
+- Reaction pills grouped per emoji, with a tooltip listing reactor names
+- Mark a specific reply as the thread's **Resolution**, with a green badge and a `⋮` menu to reopen
+
+### Attachments
+- View attachments on issues with MIME-typed icons, size, and uploader name
+- Open in browser with a click; right-click to delete
+- Upload files via toolbar button or drag-and-drop (25 MB per file)
 
 ### Issue Management
 - Browse, search, and filter Linear issues directly from the IDE
