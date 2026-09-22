@@ -17,18 +17,26 @@
 
 ---
 
-## 🎉 What's new in 1.2.0
+## 🎉 What's new in 1.3.0
 
-- **Inbox** — A dedicated Inbox tab mirrors Linear's notifications, with an unread badge on the status bar, archive/unarchive, and background polling every 60 seconds.
-- **Emoji Reactions** — React to comments with a full Unicode picker featuring live search and a "Recently used" strip. Reaction pills are grouped per emoji with reactor tooltips.
-- **Attachments** — View, open, and delete attachments on issues, or upload new files via picker or drag-and-drop (25 MB per file).
-- **Comment Thread Resolution** — Mark a specific reply as the thread's resolution; the resolving reply gets a green **Resolution** badge and can be reopened from a `⋮` menu.
+- **Task Management** — Linear issues now appear in the IDE's native *Open Task* (`Alt+Shift+N`) and *Switch Task* (`Alt+Shift+T`) popups, alongside Jira and YouTrack. Opening a task restores its editor tabs, bookmarks, breakpoints, run configurations and branch.
+- **Close Task writes back** — Pick a workflow state from the issue's own team and the transition is sent to Linear.
+- **Server-side search** — Typing filters in Linear rather than locally, and an identifier such as `BE-123` resolves that issue directly.
+- **Shared branch naming** — The new `{lnrBranch}` placeholder keeps task branches consistent with Lnr's own **Create Branch** action.
 
-See [CHANGELOG.md](CHANGELOG.md#120---2026-05-19) for the full list.
+> On IntelliJ IDEA, DataGrip and Rider **2026.2+**, install the free [Issue Trackers](https://plugins.jetbrains.com/plugin/11545-issue-trackers) plugin by JetBrains first — it is no longer bundled there. Earlier versions and WebStorm include it already.
+
+See [CHANGELOG.md](CHANGELOG.md#130---2026-09-22) for the full list.
 
 ---
 
 ## ✨ Features
+
+### Task Management (Tasks & Contexts)
+- **Native Task Popup** — Linear issues in *Open Task* and *Switch Task*, alongside Jira and YouTrack.
+- **Context Switching** — Opening a task restores its editor tabs, bookmarks, breakpoints, run configurations and branch.
+- **Close Task** — Choose a state from the issue's own team; the transition is written back to Linear.
+- **Server-Side Search** — Filtering happens in Linear, and identifiers resolve directly.
 
 ### Inbox & Notifications
 - Dedicated **Inbox** tab mirroring Linear's notifications, with relative timestamps and per-type icons
@@ -88,6 +96,8 @@ See [CHANGELOG.md](CHANGELOG.md#120---2026-05-19) for the full list.
 Lnr works with **all JetBrains IDEs**:
 
 IntelliJ IDEA · WebStorm · PyCharm · Rider · GoLand · PhpStorm · CLion · RubyMine · DataGrip · DataSpell · Aqua · RustRover · Fleet
+
+*Task Management integration additionally requires the free [Issue Trackers](https://plugins.jetbrains.com/plugin/11545-issue-trackers) plugin on IntelliJ IDEA, DataGrip and Rider 2026.2+, where JetBrains no longer bundles it.*
 
 ---
 

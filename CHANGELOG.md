@@ -4,6 +4,29 @@ All notable changes to the Lnr plugin will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com), and this project adheres to [Semantic Versioning](https://semver.org).
 
+## [1.3.0] - 2026-09-22
+
+### Added
+- **Task Management Integration:** Linear is now available as a task repository provider, so issues appear in the IDE's native *Open Task* (`Alt+Shift+N`) and *Switch Task* (`Alt+Shift+T`) popups and take part in context save/restore — editor tabs, bookmarks, breakpoints, run configurations, changelists and branches.
+  - Configure under **Settings | Tools | Tasks | Servers | + | Linear**; credentials come from your existing Lnr settings, so there is no second token to manage
+  - Defaults to issues assigned to you, unresolved, most recently updated first, with an optional team filter
+  - Search is sent to Linear rather than filtered locally, and typing an identifier such as `BE-37` resolves that issue directly
+  - *Close Task* offers the issue's own team workflow states and writes the transition back to Linear
+  - New `{lnrBranch}` and `{identifier}` placeholders for Task Management's branch and commit message formats, so a branch opened from a task matches Lnr's own **Create Branch** naming
+- **Clearer Linear API errors:** messages now prefer Linear's human-readable text over its terse internal one.
+
+### Fixed
+- **Issue detail panel scrolled sideways instead of reflowing.** A long issue title dictated the panel's width, most visibly on issues opened from the Inbox. The title now wraps and the panel adapts to the tool window.
+- **Refreshes reported cancellation as failure.** Cancelling a refresh — which happens by design on every subsequent refresh and on reset — surfaced as "Failed to refresh all data" and set an error state, and the auto-refresh loop counted each one toward its consecutive-error limit, which could eventually stop polling.
+
+### Changed
+- `LnrCommitMessageProvider` stands down when an active Linear task is configured to supply the commit message, so the identifier is never prefixed twice. Behaviour is unchanged unless you enable "Add commit message" on the repository.
+
+### Notes
+- **IntelliJ IDEA, DataGrip and Rider 2026.2+** no longer bundle the Task Management plugin. Install the free **Issue Trackers** plugin from the JetBrains Marketplace to use this feature there. WebStorm still bundles it, as do all supported IDEs up to 2025.3.
+- Configuring a task repository activates the platform's branch-context tracking, which may prompt to restore contexts when you switch branches.
+- Creating a task from the *Open Task* popup makes an IDE-local task only; it does not create a Linear issue. This matches every other task server — the platform's repository API has no create capability. Use Lnr's own **Create Issue** dialog for that.
+
 ## [1.2.0] - 2026-05-19
 
 ### Added
